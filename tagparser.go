@@ -82,6 +82,7 @@ func (st StructTag) Has(name string) bool {
 			return false
 		}
 		if idx > 0 && s[idx-1] != ' ' {
+			s = s[idx+1:]
 			continue
 		}
 		if len(s) > idx+len(name) {
