@@ -47,7 +47,7 @@ type Option struct {
 }
 
 func NewHelpFlag() *Option {
-	op, err := NewFlag("h", reflect.TypeOf(true))
+	op, err := NewFlag("help", reflect.TypeOf(true))
 	if err != nil {
 		panic(err)
 	}
